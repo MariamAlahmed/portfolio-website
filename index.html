@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    
+</head>
+<body>
+    
+<!-- Menu for PC -->
+<!--Navigation Bar(About me, etc.)-->
+<nav id="desktop-nav">
+    <div class="logo">Mariam Alahmed</div>
+    <div>
+        <ul class="nav-links">
+            <!-- li: list item, a: hyperlink -->
+            <!-- Between the tag (a) is all what you see written, and if you click it, it'll move you to a link  -->
+            <li><a href="about">About</a></li>
+            <li><a href="Expereince">Expereince</a></li>
+            <li><a href="Project">Project</a></li>
+            <li><a href="Contact">Contact</a></li>
+         </ul>   
+    </div>
+</nav>
+<!-- End -->
+    <!-- hamburger nav bar  -->
+    <!-- Menu for SmartPhone -->
+    <nav id="hamburger-nav">
+        <div class="logo">Mariam Alahmed</div>
+        <div class="hamburger-menu">
+            <!-- div for links and div for the span (x) -->
+           <div class="hamburger-icon" onclick="toggleMenu()">
+        <!-- the three lines -->
+        <span></span>
+        <span></span>
+        <span></span>
+        </div> 
+            <!-- Div inside div -->
+            <div class="menu-links">
+                    <!-- li: list item, a: hyperlink -->
+                    <!-- Between the tag (a) is all what you see written, and if you click it, it'll move you to a link  -->
+                    <li><a href="about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="Expereince" onclick="toggleMenu()">Expereince</a></li>
+                    <li><a href="Project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+ <!-- End of Hamburger -->
+    
+            </div>
+        </div>
+        
+    </nav>
+    <!-- Profile section -->
+     <section id="profile">
+      <  <div class="section__pic-container">
+            <img src="./WFB/imag.jpg" alt="my avatar">
+        </div>
+        <!-- 2nd div below 2nd div -->
+        <div class="section__text">
+            <p class ="section__text__p1">
+                Hello, I'm
+            </p>
+              <h1 class="title">Mariam Alahmed</h1>
+              <p class="section__text__p2">Computer Science</p>
+              <div class="btn-container">
+                 <!-- two buttons START REVERSLY-->
+                 <!-- +لمن ينضغط بالضبط وش بيصير -->
+                 <button class="btn btn-color-2" onclick="window.open()" >Download CV</button> <!--CHANGE-->
+                 <button class="btn btn-color-1" onclick="location.href='./#contact' " >Contact info</button> 
+                </div>
+                <!-- Last div -->
+                <div id="socials-container">
+                    <!-- two pics -->
+                    <img src="./WFB/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/mariam-alahmed-cs' " > 
+                    <img src="./WFB/github.png" alt="github" class="icon" onclick="location.href='https://github.com/MariamAlahmed'"> 
+
+                </div>
+        </div>
+    </section>
+    <!-- 4th -->
+    <!-- section for about me page -->
+    <section id="about">
+<p class="section__text__p1">Get to know more</p>
+<h1 class="title">About me</h1>
+<div class="section-container">
+  <!-- pic for about me -->
+    <div class="section__pic-container">
+      <img src="./WFB/image2.jpg" alt="Profile Pic" class="about-pic"/>
+    </div>
+    <div class="about-details-container">
+        <div class="about-containers">
+         <div class="details-container">
+        </div>   
+      <!--. OUT SIDE ASSET AND SEARCH-->
+
+    <!-- End -->
+   <div class="details-container">
+    <img src="./WFB/experience.png" alt="Experience icon" class="icon"/>
+    <h3>Experience</h3>
+    <div class="experience-detail">
+        <p class="detail-number">4+ years</p>
+        <p class="detail-label">Computer Science</p>
+    </div>
+</div>
+<div class="details-container">
+    <img src="./WFB/education.png" alt="Education Icon" class="icon"/> 
+    <h3>Education</h3>
+    <div class="experience-detail">
+        <p class="detail-number">B.Sc</p>
+        <p class="detail-label">Bachelors Degree</p>
+    </div>
+</div>
+<!-- تحت اذا معلومه اضافيه ابغا اضيفها --> 
+<div class="text-container">
+I'm a Computer Science freshly-graduate who transforms manual, time-consuming processes into efficient web applications. I specialize in front-end development with React, JavaScript, HTML, and CSS, creating user-centered solutions that make daily life easier. I'm driven by curiosity and a relentless desire to improve.</div>
+</div>
+</div>
+<img src="./WFB/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+
+    </section>
+       <!-- experience -->
+    <!-- 5th -->
+    <section id="experience">
+        <p class="section__text__p1">Explore my </p>
+        <h1 class="title">experience</h1>
+        <div class="experience-details-container">
+            <!-- This is the parent container for the two columns -->
+            <div class="about-containers">
+                
+                <!-- COLUMN 1: Computer Scientist -->
+                <div class="details-container"> 
+                    <h2 class="experience-sub-title">Computer Scientist</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./WFB/checkmark.png" alt="Experience icon" class="icon"/> 
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./WFB/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>beginner</p>
+                            </div>   
+                        </article>
+                        <article>
+                            <img src="./WFB/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div> <!-- END of COLUMN 1 -->
+                
+                <!-- COLUMN 2: Backend Development -->
+                <div class="details-container"> 
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./WFB/checkmark.png" alt="Experience icon" class="icon"/> 
+                            <div>
+                                <h3>mySQL</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <!--
+                        <article>
+                          
+                            <img src="./WFB/checkmark.png" alt="Experience icon" class="icon"/>
+                            
+                            <div>
+                                <h3>NodeJs</h3>
+                                <p>beginner</p>
+                            </div>   
+                        </article>
+                        <article>
+                            <img src="./WFB/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>ExpressJS</h3>
+                                <p>beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div> 
+              -->
+            </div> <!-- END of about-containers -->
+        </div> <!-- END of experience-details-container -->
+        <img src="./WFB/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#project'"/>
+    </section> <!-- end of Exp section-->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container"> <!-- copy paste -->
+              <div class="article-container">
+                <img
+                  src="./WFB/p1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">LyricsGame</h2>
+              <div class="btn-container">
+                <!-- copy paste -->
+                <button 
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <!-- copy paste -->
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div> <!-- copy paste -->
+            <div class="details-container color-container">
+               <!-- 
+              <div class="article-container">
+                <img
+                  src="./WFB/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./WFB/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        copy paste -->
+        <img
+          src="./WFB/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+    
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container"><!-- copy paste -->
+            <img
+              src="./WFB/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"/>
+            <p><a href="mailto:iamaryamalahmed@outlook.com">iamaryamalahmed@outlook.com</a></p>
+          </div><!-- copy paste -->
+          <div class="contact-info-container">
+            <img
+              src="./WFB/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/mariam-alahmed-cs">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 MariamAlahmed. All Rights Reserved.</p>
+      </footer>
+<!-- JS Link -->
+<script src="script.js"></script>
+</body>
+</html>

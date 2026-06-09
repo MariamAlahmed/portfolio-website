@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Asterisk means that we're doing styling for all the page */
+/* Everything in the most left */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the body (everything in the body has the same font) */
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Paragraph style */
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transition */
+/* Something quick for the future for a (Hyperlink) and button */
+a,
+.btn /* I think it's a class */ {
+    transition: 300ms ease;
+}
+
+/* Desktop nav (Arrange nav either for pc or phone) */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    /* It causes a space */
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh; /* مهما صغر الصفحه اليوزر المسافه بين ناف الاولي والثاني 17 vertical line */
+}
+
+.nav-links {
+    gap: 2rem; /* 16 px */
+    list-style: none; /* اشيل النقاط بالناف */
+    font-size: 1.5rem;
+}
+
+/* Link style e.g., about, experience..etc. */
+a {
+    color: black;
+    text-decoration: none; /* يكون الروابط بدون نقاط سودا */
+    text-decoration-color: white; /* Optional */
+}
+
+/* Hover لمن أشر المؤشر يتغير اللون */
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem; /* اللاين لمن نأشر المشافه اللي ينزلها */
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Styling for logo (.) preceded by class name indicates that it's only for the logo */
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    /* I can click the logo, and it could navigate me to any page */
+    /* لمن أضغط ع اللوقو ما يأشر بس اللي جنبه يأشر */
+    cursor: default;
+}
+
+/* Nav bar for the hamburger */
+/* للجوال باللاب ابي اخفيه، لمن أصغر الشاشه اللي فوق يختفي واللي تحت يبان */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: block;
+}
+
+.hamburger-icon /* 3 spans that we've made in HTML portion */ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* رتبت شكل اللنكس */
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* طريقة ترتيب اللنكس */
+.menu-links li /* the menu */ {
+    list-style: none;
+}
+
+/* ايش يصير بالضبط لو ضغطنا على الهامبرقر مينيو */
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-links.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+    /* الخطوط الطفل الاول والثاني والثالث نبي الول والثاني يلفون 45 درجة ويتحول x */
+}
+
+.hamburger-links.open span:nth-child(2) /* 2nd line */ {
+    /* مانبيها تبان */
+    opacity: 0;
+}
+
+.hamburger-links.open span:last-child /* 2nd line */ {
+    /* من تحت لفوق */
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    /* مانبيها تبان */
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* End of all menu */
+
+/* Sections */
+/* نصمم الصفحه بحيث ان تكون مضبوطه */
+/* اعدادات الصور حقت لنكد ان وقتهب */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+/* اي p موجود بالسكشن */
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 /* SPECIFIC */ {
+    text-align: center;
+}
+
+.section__text__p1 /* SPECIFIC */ {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Button itself */
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-1:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* About section */
+#about /* Target only the id not the classes */ {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem; /* px */
+    margin-bottom: 2rem; /* يستهدف الاباوت مي تحت فقط ا */
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Margine two */
+.about-containers,
+.about-details-container {
+    display: flex; /* Contailer private not display */
+}
+
+.about-pic {
+    border-radius: 2rem; /* It was sharp rec but now it's neater */
+}
+
+.arrow {
+    position: absolute; /* Don't skip it */
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53);
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* Experience section */
+/* Experience section */
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+/* Class */
+.experience-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Article container for both Computer Science and Backend Development */
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+/* Article for both Computer Science and Backend Development */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items in the center */
+    text-align: center;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+/* Computer Scientist section */
+.computer-scientist-container {
+    margin-bottom: 2rem; /* Adjust margin as needed */
+}
+
+/* End of skills */
+/* Project skills */
+#projects {
+    position: relative;
+  }
+  
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+  
+  .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+  
+  /* CONTACT */
+  
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  
+  /* FOOTER SECTION */
+  
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  /* Add this to your style.css file to fix the experience columns */
+#experience .about-containers {
+    display: flex;
+    gap: 2rem;
+}
+
+#experience .details-container {
+    flex: 1; /* This makes both columns take equal width */
+}
+/* Style for Experience and Education details in About section */
+.experience-detail {
+    margin-top: 0.5rem;
+}
+
+.detail-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: rgb(85, 85, 85);
+}

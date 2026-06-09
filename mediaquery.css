@@ -1,0 +1,107 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height:  83vh; /*100vh is a fixed value that is equal to the height of the viewport, while 100% is a relative value that is based on the size of the parent element. */
+        margin-bottom:96;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+        height: fit-content;
+    }
+}
+
+/* سويناها عشان تتحكم بحجم الشاشه اذا صارت صغيره او بالجوال */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    /* المنيو تروح والهامبرقر تظهر */
+    #hamburger-nav {
+        display: flex;
+    }
+    /* stopped at 01:16:00 */
+}
+
+#experience,
+.experience-details-container {
+    margin-top: 2rem;
+}
+#profile,
+.section-container {
+    display: block;
+}
+.arrow {
+    display: none;
+}
+section,
+.section-container {
+    height: fit-content; /* Use the available space, but not more than max-content. if there is one, */
+}
+section {
+    margin: 0 5%;
+}
+.section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem; /* margin will make it depend on the wideth and the height specified to make it marginally equal on all sides */
+}
+.about-containers {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: auto; /* cuz we want it to be responsive. meaning on any device to be the same, hence the auto property */
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify; /* justify the text to take the whole width of the container its in it. */
+    }
+}
