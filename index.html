@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Alahmed | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+
+<!-- Menu for PC -->
+<nav id="desktop-nav">
+    <div class="logo">Mariam Alahmed</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Menu for SmartPhone -->
+<nav id="hamburger-nav">
+    <div class="logo">Mariam Alahmed</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Profile section -->
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./WFB/imag.jpg" alt="my avatar">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mariam Alahmed</h1>
+        <p class="section__text__p2">Computer Science Graduate</p>
+        <p class="hero-tagline">IT Infrastructure &amp; Networking | Cybersecurity | Machine Learning</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./WFB/Mariam_Alahmed_CV.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./WFB/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/mariam-alahmed-104626268/'">
+            <img src="./WFB/github.png" alt="github" class="icon" onclick="location.href='https://github.com/MariamAlahmed'">
+        </div>
+    </div>
+</section>
+
+<!-- About me section -->
+<section id="about">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./WFB/image2.jpg" alt="Profile Pic" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+
+                <!-- Education Card -->
+                <div class="details-container">
+                    <img src="./WFB/education.png" alt="Education Icon" class="icon"/>
+                    <h3>Education</h3>
+                    <div class="experience-detail">
+                        <p class="detail-number">B.Sc</p>
+                        <p class="detail-label">Computer Science</p>
+                    </div>
+                </div>
+
+                <!-- Co-op Card -->
+                <div class="details-container">
+                    <img src="./WFB/experience.png" alt="Experience icon" class="icon"/>
+                    <h3>Co-op Training</h3>
+                    <div class="experience-detail">
+                        <p class="detail-number">SNL</p>
+                        <p class="detail-label">Networking &amp; IT operations</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bio Text -->
+            <div class="text-container">
+                <ul>
+                    <li>Computer Science graduate with hands-on exposure to IT infrastructure, networking, cybersecurity, and machine learning</li>
+                    <li>Worked with network operations, monitoring tools, and technical support during co-op training</li>
+                    <li>Built projects in machine learning, security monitoring, and UI/UX design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="./WFB/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+</section>
+
+<!-- Technical Skills section -->
+<section id="skills">
+    <p class="section__text__p1">What I work with</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="skills-grid">
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">Programming</h2>
+            <div class="chip-list"><span>C++</span><span>Java</span><span>Python</span></div>
+        </div>
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">Networking &amp; Telecom</h2>
+            <div class="chip-list"><span>NOC operations</span><span>VSAT systems</span><span>Modem configuration</span><span>Network troubleshooting</span></div>
+        </div>
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">Network Management</h2>
+            <div class="chip-list"><span>Aruba access points</span><span>TP-Link Omada</span><span>iMonitor</span><span>iBuilder</span></div>
+        </div>
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">IT Operations</h2>
+            <div class="chip-list"><span>Odoo tickets</span><span>Database operations</span><span>Technical support</span></div>
+        </div>
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">Cybersecurity</h2>
+            <div class="chip-list"><span>SOC exposure</span><span>Wazuh</span></div>
+        </div>
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">Machine Learning</h2>
+            <div class="chip-list"><span>Python</span><span>scikit-learn</span><span>PyTorch</span><span>Model training &amp; evaluation</span></div>
+        </div>
+
+        <div class="details-container skill-card">
+            <h2 class="skill-title">UI/UX</h2>
+            <div class="chip-list"><span>Interface design</span><span>Prototyping</span></div>
+        </div>
+    </div>
+    <img src="./WFB/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+</section>
+
+<!-- Experience section -->
+<section id="experience">
+    <p class="section__text__p1">Explore my</p>
+    <h1 class="title">Experience</h1>
+    <div class="details-container experience-card">
+        <h2 class="experience-sub-title">SNL Co-op Training</h2>
+        <ul class="experience-list">
+            <li>Network operations center (NOC) work and network troubleshooting</li>
+            <li>VSAT systems and modem configuration</li>
+            <li>Network management with Aruba access points and TP-Link Omada</li>
+            <li>Monitoring and management with iMonitor and iBuilder</li>
+            <li>Odoo tickets, database operations, and technical support</li>
+            <li>Exposure to security operations center (SOC) work</li>
+        </ul>
+    </div>
+    <img src="./WFB/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+</section>
+
+<!-- Projects section (carousels) -->
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Featured Projects</h1>
+
+    <!--
+        TO ADD A PROJECT: copy one whole <article class="project-card"> block,
+        paste it inside a carousel-track, then change the tags, title, description and GitHub link.
+    -->
+    <div class="carousel" id="projects-carousel">
+        <div class="carousel-track" tabindex="0" role="region" aria-label="Projects, scroll sideways to see more">
+            <article class="project-card">
+                <h2 class="project-card-title">Customer Churn Prediction with PyTorch</h2>
+                <p class="project-desc">End-to-end machine learning pipeline, from data preparation to model training and evaluation.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/MariamAlahmed/customer-churn-prediction-pytorch')">GitHub</button>
+                </div>
+            </article>
+            <article class="project-card">
+                <h2 class="project-card-title"><span lang="ar" dir="rtl">طشة</span> | Tasha – Smart Tourism Platform</h2>
+                <p class="project-desc">Smart tourism platform built for a hackathon and placed in the top 12.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://mariamalahmed.github.io/tasha-tourism/')">Live Demo</button>
+                </div>
+            </article>
+            <article class="project-card">
+                <h2 class="project-card-title">Wazuh Security Monitoring Dashboard</h2>
+                <p class="project-desc">Security monitoring dashboard built with Wazuh, based on SOC exposure.</p>
+            </article>
+            <article class="project-card">
+                <h2 class="project-card-title">Income Classification Using Decision Trees</h2>
+                <p class="project-desc">Data preprocessing, classification, and model comparison.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/MariamAlahmed/adult-income-classification/tree/main/UPDATED%20DS%20PROJECT')">GitHub</button>
+                </div>
+            </article>
+            <article class="project-card">
+                <h2 class="project-card-title">Comparative Analysis of Machine Learning Models for SMS Spam Detection</h2>
+                <p class="project-desc">Comparison of several machine learning models for detecting spam messages.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/MariamAlahmed/spam-detection-models')">GitHub</button>
+                </div>
+            </article>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn carousel-prev" aria-label="Previous projects">&#8592;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next projects">&#8594;</button>
+        </div>
+    </div>
+
+    <h2 class="subsection-title">Additional Projects</h2>
+    <div class="carousel" id="additional-carousel">
+        <div class="carousel-track" tabindex="0" role="region" aria-label="Projects, scroll sideways to see more">
+            <article class="project-card">
+                <h2 class="project-card-title">E-Commerce App UI/UX Design</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.figma.com/design/3jybubRVIRa2hlNabteoYf/E-commerce-Project?node-id=2039-868&t=xVePBvxWpORw9m21-1')">View Design</button>
+                </div>
+            </article>
+            <article class="project-card">
+                <h2 class="project-card-title">Smart Parking System</h2>
+                <div class="btn-container">
+                </div>
+            </article>
+            <article class="project-card">
+                <h2 class="project-card-title">AI-Powered Text Summarization Web Application</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://mariamalahmed.github.io/ai-text-summarizer/')">Live Demo</button>
+                </div>
+            </article>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn carousel-prev" aria-label="Previous projects">&#8592;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next projects">&#8594;</button>
+        </div>
+    </div>
+
+    <img src="./WFB/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+</section>
+
+<!-- Contact section -->
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./WFB/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+            <p><a href="mailto:iamaryamalahmed@outlook.com">iamaryamalahmed@outlook.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./WFB/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/mariam-alahmed-104626268/">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2026 Mariam Alahmed. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
